@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+<head> <!-- No need to change anything here... -->
+    <title>Explore</title>
+    <meta charset="utf8" />
+    <meta name="content-type" http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./static/css/site-theme.css" />
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+    <script defer src="./static/js/ui-views.js"></script>
+    <script defer src="./static/js/bookmap.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+    
+</head>
+<body>
+    <nav class="Navbar" id="navbar"></nav>
+    <div class="site-block">
+        <h1>Find Bookstores Near You</h1>
+
+        <input type="text" id="zip" placeholder="Enter your zipcode" />
+        <button onclick="zipSearch()">Search</button>
+
+        <div  id ="store-results" class="results"> </div>
+
+        <div class='Map-Container'> 
+            <div id="map"></div>
+        </div>
+
+        
+
+        <div class='Book-Stores' id=Book-Stores> </div>
+
+        
+        
+     
+    </div>
+</body>
+</html>
