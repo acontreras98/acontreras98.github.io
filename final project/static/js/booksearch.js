@@ -12,7 +12,7 @@ function bookSearch() {
 }
 
 function doFetch() {
-    const url = 'http://openlibrary.org/search.json?q=' + query + '&limit=5';
+    const url = 'https://openlibrary.org/search.json?q=' + query + '&limit=5';
     isLoading = true;
     //render();
     console.log('making query to ', url);
